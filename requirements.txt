@@ -1,0 +1,10 @@
+numpy
+pandas
+lxml
+scrapy_playwright
+scrapy
+playwright
+termcolor
+tqdm
+opencv-python
+pillow
