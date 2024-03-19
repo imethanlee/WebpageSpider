@@ -113,17 +113,17 @@ class WebpageSpider(scrapy.Spider):
             "landing_url": response.url
             }
     
-    # def closed(self, reason):
-    #     self._end_time = time.time()
-    #     total_time = self._end_time - self._start_time
-    #     avg_time = total_time / self._requests_sent_cnt
+    def closed(self, reason):
+        self._end_time = time.time()
+        total_time = self._end_time - self._start_time
+        avg_time = total_time / self._requests_sent_cnt
 
-    #     print()
-    #     print(f"############################")
-    #     print(f"## URL SENT: {self._requests_sent_cnt:8d}")
-    #     print(f"## URL DONE: {self._requests_completed_cnt:8d}")
-    #     print(f"## TOT TIME: {total_time:7.2f}s")
-    #     print(f"## AVG TIME: {avg_time:7.2f}s")
-    #     print(f"## CLOSED:   {reason}")
-    #     print(f"############################")
+        print()
+        print(f"############################")
+        print(f"## URL SENT: {self._requests_sent_cnt:8d}")
+        print(f"## URL DONE: {self._requests_completed_cnt:8d}")
+        print(f"## TOT TIME: {total_time:7.2f}s")
+        print(f"## AVG TIME: {avg_time:7.2f}s")
+        print(f"## CLOSED:   {reason}")
+        print(f"############################")
 
