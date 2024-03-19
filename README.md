@@ -1,7 +1,7 @@
 # WebpageSpider: A Concurrent Webpage Data Scraper
 
 ## 1. Introduction
-WebpageSpider is a webpage data scraper based on [Scrapy](https://scrapy.org/) and [Playwright](https://playwright.dev/python/), particularly used to fetch static webpage data for the following phishing detectors:
+WebpageSpider is a concurrent webpage data scraper based on [Scrapy](https://scrapy.org/) and [Playwright](https://playwright.dev/python/), particularly used to fetch static webpage data for the following phishing detectors:
 - [KnowPhish Detector](https://arxiv.org/abs/2403.02253)
 - [PhishIntention](https://www.usenix.org/conference/usenixsecurity22/presentation/liu-ruofan)
 - [Phishpedia](https://www.usenix.org/conference/usenixsecurity21/presentation/lin)
@@ -31,10 +31,9 @@ You can just simply specify your input URL list within the ```__init__()``` meth
 ```
 scrapy crawl webpage_spider
 ```
+The scaper can concurrently process 16 URL requests at the same time. You can modify the maximum concurrent requests at ```./mySpider/settings.py```.
 
-
-
-(Optional) By default WebpageSpider will look at the csv file in ```./input/``` to get a list of input URLs and output the crawled data at a folder in ```./output```. We also provide two scripts to fetch a few examples of benign and phishing URLs
+(Optional) By default, WebpageSpider will look at the csv file in ```./input/``` to get a list of input URLs and output the crawled data at a folder in ```./output```. We also provide two scripts to fetch a few examples of benign and phishing URLs
 - Benign (from [Tranco](https://tranco-list.eu/))
 ```
 python ./input/pull_tranco_urls.py
