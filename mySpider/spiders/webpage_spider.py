@@ -73,7 +73,7 @@ class WebpageSpider(scrapy.Spider):
 
         input_url = response.meta["input_url"]
         landing_url = response.url
-        landing_domain = urlparse(landing_url).netloc
+        landing_netloc = urlparse(landing_url).netloc
 
         shot_bytes = response.meta["playwright_page_methods"][0].result
         html_str = response.meta["playwright_page_methods"][1].result
@@ -82,7 +82,7 @@ class WebpageSpider(scrapy.Spider):
         print(f"===== {colored('PROCESSING', 'yellow', attrs=['bold', 'reverse'])}   {rank:5d}-th REQUEST ({landing_url})")
 
         # 2. Configure the output folder
-        folder_name = utils.get_url_folder_name(landing_domain, self._output_dir, f"[{self._current_date}]")
+        folder_name = utils.get_url_folder_name(landing_netloc, self._output_dir, f"[{self._current_date}]")
         url_folder_path = os.path.join(self._output_dir, folder_name)
         if not os.path.exists(url_folder_path):
             os.mkdir(url_folder_path)
