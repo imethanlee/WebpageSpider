@@ -56,3 +56,6 @@ If you find this project helpful, please consider citing our paper
       primaryClass={cs.CR}
 }
 ```
+
+## Acknowledgement
+This project was developed with the assistance of @meilinnn and @lindsey98.
