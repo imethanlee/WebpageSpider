@@ -3,6 +3,7 @@
 ## 1. Introduction
 WebpageSpider is a concurrent webpage data scraper based on [Scrapy](https://scrapy.org/) and [Playwright](https://playwright.dev/python/), particularly used to fetch static webpage data for the following phishing detectors:
 - [KnowPhish Detector](https://arxiv.org/abs/2403.02253)
+- [DynaPhish](https://www.usenix.org/conference/usenixsecurity23/presentation/liu-ruofan) (w/o webpage interaction)
 - [PhishIntention](https://www.usenix.org/conference/usenixsecurity22/presentation/liu-ruofan)
 - [Phishpedia](https://www.usenix.org/conference/usenixsecurity21/presentation/lin)
 
