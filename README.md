@@ -45,16 +45,20 @@ python ./input/pull_tranco_urls.py
 python ./input/pull_openphish_urls.py
 ```
 
-## 4. Citation
+## Citation
 If you find this project helpful, please consider citing our paper
 ```
-@misc{li2024knowphish,
-      title={KnowPhish: Large Language Models Meet Multimodal Knowledge Graphs for Enhancing Reference-Based Phishing Detection}, 
-      author={Yuexin Li and Chengyu Huang and Shumin Deng and Mei Lin Lock and Tri Cao and Nay Oo and Bryan Hooi and Hoon Wei Lim},
-      year={2024},
-      eprint={2403.02253},
-      archivePrefix={arXiv},
-      primaryClass={cs.CR}
+@inproceedings {li2024knowphish,
+  author = {Yuexin Li and Chengyu Huang and Shumin Deng and Mei Lin Lock and Tri Cao and Nay Oo and Hoon Wei Lim and Bryan Hooi},
+  title = {{KnowPhish}: Large Language Models Meet Multimodal Knowledge Graphs for Enhancing {Reference-Based} Phishing Detection},
+  booktitle = {33rd USENIX Security Symposium (USENIX Security 24)},
+  year = {2024},
+  isbn = {978-1-939133-44-1},
+  address = {Philadelphia, PA},
+  pages = {793--810},
+  url = {https://www.usenix.org/conference/usenixsecurity24/presentation/li-yuexin},
+  publisher = {USENIX Association},
+  month = aug
 }
 ```
 
