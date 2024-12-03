@@ -47,7 +47,7 @@ python ./input/pull_openphish_urls.py
 
 ## Citation
 If you find this project helpful, please consider citing our paper
-```
+```bibtex
 @inproceedings {li2024knowphish,
   author = {Yuexin Li and Chengyu Huang and Shumin Deng and Mei Lin Lock and Tri Cao and Nay Oo and Hoon Wei Lim and Bryan Hooi},
   title = {{KnowPhish}: Large Language Models Meet Multimodal Knowledge Graphs for Enhancing {Reference-Based} Phishing Detection},
